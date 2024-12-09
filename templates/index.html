@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>cinemate</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- <link rel="stylesheet" href="static/css/style.css" type="text/css" media="all" /> -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-func.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!--[if IE 6]><link rel="stylesheet" href="css/ie6.css" type="text/css" media="all" /><![endif]-->
+</head>
+<body>
+    <!-- START PAGE SOURCE -->
+    <div id="shell">
+      <div id="header">
+        <h1 id="logo"><a href="#">cinemate</a></h1>
+        <div id="navigation">
+          <ul>
+            <li><a class="active" href="#">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#search">SEARCH</a></li>
+          </ul>
+        </div>
+        <div id="sub-navigation">
+          <ul>
+            <li><a href="#toprated">TOP RATED</a></li>
+            <li><a href="#mostsearched">MOST SEARCHED</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="main">
+        <div id="content">
+          <div class="box">
+            <div class="head" id="toprated">
+              <h2>TOP RATED</h2>
+              <p class="text-right"><a href="#">See all</a></p>
+            </div>
+            <div class="movie">
+              <div class="movie-image"> <a href="#"> <img src="{{ url_for('static', filename='images/grumpier.jpg') }}" alt="" /></a>
+              </div>
+              <div class="rating">
+                <br>Grumpier Old Man (1995)</br>
+                <p>RATING</p>
+                <div class="stars">
+                  <div class="stars-in"> </div>
+                </div>
+                <span class="comments">12</span> </div>
+            </div>
+            <div class="movie">
+              <div class="movie-image"> <a href="#"><img src="{{ url_for('static', filename='images/bottle.jpg')}}" alt="" /></a> </div>
+              <div class="rating">
+                <br>Bottle Rocket (1996)</br>
+                <p>RATING</p>
+                <div class="stars">
+                  <div class="stars-in"> </div>
+                </div>
+                <span class="comments">12</span> </div>
+            </div>
+            <div class="movie">
+              <div class="movie-image"> <a href="#"><img src="{{ url_for('static', filename='images/limitless.jpg')}}" alt="" /></a> </div>
+              <div class="rating">
+                <br>Limitless (2011)</br>
+                <p>RATING</p>
+                <div class="stars">
+                  <div class="stars-in"> </div>
+                </div>
+                <span class="comments">12</span> </div>
+            </div>
+            <div class="movie">
+              <div class="movie-image"> <a href="#"><img src="{{ url_for('static', filename='images/starwars.jpg')}}" alt="" /></a> </div>
+              <div class="rating">
+                <br>Star Wars: Episode VII - The Force Awakens (2015)</br>
+                <p>RATING</p>
+                <div class="stars">
+                  <div class="stars-in"> </div>
+                </div>
+                <span class="comments">12</span> </div>
+            </div>
+            <div class="movie">
+              <div class="movie-image"> <a href="#"><img src="{{ url_for('static', filename='images/skyfall.jpg')}}" alt="" /></a> </div>
+              <div class="rating">
+                <br>Skyfall (2011)</br>
+                <p>RATING</p>
+                <div class="stars">
+                  <div class="stars-in"> </div>
+                </div>
+                <span class="comments">12</span> </div>
+            </div>
+            <div class="movie last">
+              <div class="movie-image"> <a href="#"><img src="{{ url_for('static', filename='images/toystory3.jpg')}}" alt="" /></a> </div>
+              <div class="rating">
+                <br>Toy Story 3 (2010)</br>
+                <p>RATING</p>
+                <div class="stars">
+                  <div class="stars-in"> </div>
+                </div>
+                <span class="comments">12</span> </div>
+            </div>
+            <div class="cl">&nbsp;</div>
+          </div>
+          <div class="box">
+            <div class="head" id="mostsearched">
+              <h2>MOST SEARCHED</h2>
+              <p class="text-right"><a href="#">See all</a></p>
+            </div>
+            <div class="movie">
+              <div class="movie-image">  <a href="#"><img src="{{ url_for('static', filename='images/ironmanhulk.jpg')}}" alt="" /></a> </div>
+              <div class="rating">
+                <br>Iron Man & Hulk: Heroes United (2013)</br>
+                <p>RATING</p>
+                <div class="stars">
+                  <div class="stars-in2"> </div>
+                </div>
+                <span class="comments">12</span> </div>
+            </div>
+            <div class="movie">
+              <div class="movie-image">  <a href="#"><img src="{{ url_for('static', filename='images/jumanji.jpg')}}" alt="" /></a> </div>
+              <div class="rating">
+                <br>Jumanji (1995)</br>
+                <p>RATING</p>
+                <div class="stars">
+                  <div class="stars-in"> </div>
+                </div>
+                <span class="comments">12</span> </div>
+            </div>
+            <div class="movie">
+              <div class="movie-image">  <a href="#"><img src="{{ url_for('static', filename='images/jurassiccworld.jpg')}}" alt="" /></a> </div>
+              <div class="rating">
+                <br>Jurassic World (2015)</br>
+                <p>RATING</p>
+                <div class="stars">
+                  <div class="stars-in"> </div>
+                </div>
+                <span class="comments">12</span> </div>
+            </div>
+            <div class="movie">
+              <div class="movie-image">  <a href="#"><img src="{{ url_for('static', filename='images/mazerunner.jpg')}}" alt="" /></a> </div>
+              <div class="rating">
+                <br>Maze Runner: Scorch Trials (2015)</br>
+                <p>RATING</p>
+                <div class="stars">
+                  <div class="stars-in2"> </div>
+                </div>
+                <span class="comments">108</span> </div>
+            </div>
+            <div class="movie">
+              <div class="movie-image">  <a href="#"><img src="{{ url_for('static', filename='images/batman.jpg')}}" alt="" /></a> </div>
+              <div class="rating">
+                <br>Batman vs. Robin (2015)</br>
+                <p>RATING</p>
+                <div class="stars">
+                  <div class="stars-in2"> </div>
+                </div>
+                <span class="comments">256</span> </div>
+            </div>
+            <div class="movie last">
+              <div class="movie-image"> <a href="#"><img src="{{ url_for('static', filename='images/tomorrowland.jpg')}}" alt="" /></a> </div>
+              <div class="rating">
+                <br>Tomorrowland (2015)</br>
+                <p>RATING</p>
+                <div class="stars">
+                  <div class="stars-in2"> </div>
+                </div>
+                <span class="comments">138</span> </div>
+            </div>
+            <div class="cl">&nbsp;</div>
+          </div>
+        </div>
+    
+        <!-- About Section -->
+        <section id="about" class="section">
+          <h2>About Us</h2>
+          <p>We provide recommendations tailored to your movie preferences. Providing convenience in finding films according to their interests, saving search time, and increasing user satisfaction when searching for films. Start exploring now!</p>
+        </section>
+        
+        <!-- Search Section -->
+        <div id="search">
+          <h2>Search for Your Favorite Movie</h2>
+          <form action="/search" method="POST" class="search-form">
+              <!-- Menampilkan input sebelumnya -->
+              <input type="text" name="query" placeholder="Enter movie title" value="{{ query }}" required>
+              <button type="submit">Search</button>
+          </form>
+      </div>
+      
+      
+      <!-- Results Section -->
+      <div id="results">
+        {% if movies and multiple %}
+        <!-- Jika hasil pencarian memiliki multiple matches -->
+        <div class="box">
+            <div class="head">
+                <h2>Select a Movie</h2>
+            </div>
+            <div class="content">
+                <ul>
+                    {% for movie in movies %}
+                    <li>
+                        <!-- Tautan langsung pada judul film -->
+                        <a href="{{ url_for('recommend', movie_id=movie.id) }}" class="movie-link">
+                            <h3>{{ movie.title }}</h3>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% elif movies %}
+        <!-- Jika hasil pencarian adalah rekomendasi -->
+        <div class="box">
+            <div class="head">
+                <h2>Recommendations</h2>
+            </div>
+            <div class="content">
+                <ul>
+                    {% for movie in movies %}
+                    <li>
+                        <h3>{{ movie.title }}</h3>
+                        <p><strong>Genres:</strong> {{ movie.genres }}</p>
+                        <p><strong>Average Rating:</strong> {{ movie.rating }}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% endif %}
+        </div>
+
+        <div class="cl">&nbsp;</div>
+        </div>
+        <div id="footer">
+            <p class="lf">Copyright &copy; 2024 <a href="#">cinemate</a> - All Rights Reserved</p>
+            <p class="rf">Design by AGG&CVL</a></p>
+            <div style="clear:both;"></div>
+          </div>
+        </div>
+        <!-- END PAGE SOURCE -->
+    </body>
+</html>
